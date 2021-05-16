@@ -5,9 +5,10 @@ Starter template for bootstrapping a [TypeGraphQL](https://typegraphql.com/) + [
 ## Getting started
 
 1. Install [Node.js](https://nodejs.org/) 14 or later.
-2. `npm install` in project root directory
-3. `npm start` to start the server
-4. Access Playground with browser, at `http://localhost:4000/` by default. Check _DOCS_ for the API definition and try running some queries, e.g.
+1. `git clone https://github.com/lauriharpf/type-graphql-starter.git` to clone this repository
+1. `npm install` in project root directory
+1. `npm start` to start the server
+1. Access Playground with browser, at `http://localhost:4000/` by default. Check _DOCS_ for the API definition and try running some queries, e.g.
 
 ```
 query Posts {
@@ -20,7 +21,7 @@ query Posts {
 }
 ```
 
-5. `CTRL-C` stops the server
+6. `CTRL-C` stops the server
 
 Tests can be run with `npm test`
 

@@ -15,7 +15,6 @@ describe("PostResolver", () => {
         }
       }
     `;
-
     nock("https://jsonplaceholder.typicode.com/posts")
       .get("/")
       .reply(200, [
@@ -26,6 +25,7 @@ describe("PostResolver", () => {
           body: "Body\nof the\npost",
         },
       ]);
+
     const server = await createServer();
     const { query } = createTestClient(server);
     const response = await query({ query: postsQuery });
