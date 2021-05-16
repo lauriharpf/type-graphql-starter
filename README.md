@@ -23,7 +23,7 @@ query Posts {
 
 6. `CTRL-C` stops the server
 
-Tests can be run with `npm test`
+Tests can be run with `npm test` (`npm test -- --coverage` to report code coverage)
 
 ## Template contents
 
@@ -33,6 +33,26 @@ Tests can be run with `npm test`
 - Example resolvers and [Apollo REST Data Source](https://www.npmjs.com/package/apollo-datasource-rest)s (posts, users)
 - Test infrastructure ([ts-jest](https://github.com/kulshekhar/ts-jest), [apollo-server-testing](https://www.apollographql.com/docs/apollo-server/testing/testing/) and [nock](https://www.npmjs.com/package/nock)) and example tests
 - [ts-node-dev](https://www.npmjs.com/package/ts-node-dev) for development (restarts app when code changes)
+- Github: Dependabot dependency updates
+
+## Customizing for your project
+
+After installing and experimenting with the template (see [Getting started](#getting-started)), customize it to suit your needs:
+
+1. Set the `name`, `version`, `description`, `license` and `author` of your project in `package.json`
+1. Run `npm install` to update `package-lock.json` with the new `package.json` contents
+1. Customize or remove the project-specific files
+   - `.github/ISSUE_TEMPLATE/*`
+   - `README.md`
+   - `CODE_OF_CONDUCT.md`
+   - `CONTRIBUTING.md`
+   - `LICENSE`
+1. Run `git remote remove origin` in the project root directory to remove link to the template repository
+1. Create a new repository, e.g. in Github
+1. Run `git remote add origin YOUR_REPOSITORY_ADDESS` to link with your new repository
+1. `git push -u origin master` to push the code
+
+Remove the examples under `src/posts` and `src/users` when they are no longer useful for you.
 
 ## Versioning
 

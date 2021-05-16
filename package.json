@@ -10,7 +10,7 @@
     "start": "ts-node-dev --respawn --transpile-only ./src/bootstrap.ts",
     "test": "jest"
   },
-  "author": "",
+  "author": "Lauri Harpf <lauri.harpf@acelvia.com> (https://github.com/lauriharpf/type-graphql-starter)",
   "license": "MIT",
   "dependencies": {
     "apollo-datasource-rest": "^0.13.0",
