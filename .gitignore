@@ -3,3 +3,6 @@ node_modules/
 
 # Compiled code
 build/
+
+# Test coverage reports
+coverage/
