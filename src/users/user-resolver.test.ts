@@ -27,6 +27,7 @@ describe("UserResolver", () => {
       ]);
 
     const server = await createServer();
+    // eslint-disable-next-line jest/unbound-method
     const { query } = createTestClient(server);
     const response = await query({ query: usersQuery });
 
@@ -54,6 +55,7 @@ describe("UserResolver", () => {
     });
 
     const server = await createServer();
+    // eslint-disable-next-line jest/unbound-method
     const { query } = createTestClient(server);
     const response = await query({
       query: userQuery,
@@ -98,6 +100,7 @@ describe("UserResolver", () => {
       ]);
 
     const server = await createServer();
+    // eslint-disable-next-line jest/unbound-method
     const { query } = createTestClient(server);
     const response = await query({
       query: userQueryWithPosts,

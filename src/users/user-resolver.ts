@@ -9,6 +9,7 @@ import {
   Root,
 } from "type-graphql";
 import { Context } from "../context";
+import { Post } from "../posts/post-type";
 import { User } from "./user-type";
 
 // Resolver with TypeGraphQL decorators: https://typegraphql.com/docs/resolvers.html
@@ -30,7 +31,7 @@ export class UserResolver implements ResolverInterface<User> {
 
   // Field resolver, see https://typegraphql.com/docs/resolvers.html#field-resolvers
   @FieldResolver()
-  async posts(@Root() user: User, @Ctx() context: Context) {
+  async posts(@Root() user: User, @Ctx() context: Context): Promise<Post[]> {
     const allPosts = await context.dataSources.postDataSource.getPosts();
     return allPosts.filter((post) => post.userId === user.id);
   }
