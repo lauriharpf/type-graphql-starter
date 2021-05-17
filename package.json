@@ -8,7 +8,8 @@
   },
   "scripts": {
     "start": "ts-node-dev --respawn --transpile-only ./src/bootstrap.ts",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "author": "Lauri Harpf <lauri.harpf@acelvia.com> (https://github.com/lauriharpf/type-graphql-starter)",
   "license": "MIT",
@@ -22,7 +23,11 @@
   },
   "devDependencies": {
     "@types/jest": "^26.0.23",
+    "@typescript-eslint/eslint-plugin": "^4.23.0",
+    "@typescript-eslint/parser": "^4.23.0",
     "apollo-server-testing": "^2.24.0",
+    "eslint": "^7.26.0",
+    "eslint-plugin-jest": "^24.3.6",
     "jest": "^26.6.3",
     "nock": "^13.0.11",
     "ts-jest": "^26.5.6",

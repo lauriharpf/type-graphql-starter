@@ -6,7 +6,7 @@ import { Post } from "./post-type";
 @Resolver(Post)
 export class PostResolver {
   @Query(() => [Post])
-  async posts(@Ctx() context: Context) {
+  async posts(@Ctx() context: Context): Promise<Post[]> {
     return context.dataSources.postDataSource.getPosts();
   }
 }

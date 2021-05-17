@@ -23,7 +23,11 @@ query Posts {
 
 6. `CTRL-C` stops the server
 
-Tests can be run with `npm test` (`npm test -- --coverage` to report code coverage)
+### Other commands
+
+- `npm test` to run tests
+- `npm test -- --coverage` to run tests and collect code coverage
+- `npm run lint` to lint the project
 
 ## Template contents
 
@@ -33,6 +37,7 @@ Tests can be run with `npm test` (`npm test -- --coverage` to report code covera
 - Example resolvers and [Apollo REST Data Source](https://www.npmjs.com/package/apollo-datasource-rest)s (posts, users)
 - Test infrastructure ([ts-jest](https://github.com/kulshekhar/ts-jest), [apollo-server-testing](https://www.apollographql.com/docs/apollo-server/testing/testing/) and [nock](https://www.npmjs.com/package/nock)) and example tests
 - [ts-node-dev](https://www.npmjs.com/package/ts-node-dev) for development (restarts app when code changes)
+- [typescript-eslint](https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/README.md) with [type-aware rules](https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/TYPED_LINTING.md)
 - Github: Dependabot dependency updates
 
 ## Customizing for your project
