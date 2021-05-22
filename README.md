@@ -27,7 +27,7 @@ query Posts {
 
 ### Other commands
 
-  - `npm test` to run tests
+- `npm test` to run tests
 - `npm test -- --coverage` to run tests and collect code coverage
 - `npm run lint` to lint the project
 
