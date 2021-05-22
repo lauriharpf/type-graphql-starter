@@ -1,3 +1,5 @@
+![Build](https://github.com/lauriharpf/type-graphql-starter/actions/workflows/node.js.yml/badge.svg)
+
 # TypeGraphQL starter template
 
 Starter template for bootstrapping a [TypeGraphQL](https://typegraphql.com/) + [Apollo Server](https://www.apollographql.com/docs/apollo-server/) GraphQL API. The purpose is to help getting started quickly with TypeGraphQL development by providing a runnable API with examples you can build on. Not endorsed by or affiliated with the TypeGraphQL team. Be sure to also check out the [TypeGraphQL documentation](https://typegraphql.com/docs/introduction.html) and [examples](https://typegraphql.com/docs/examples.html).
@@ -38,7 +40,7 @@ query Posts {
 - Test infrastructure ([ts-jest](https://github.com/kulshekhar/ts-jest) and [nock](https://www.npmjs.com/package/nock)) with example tests
 - [ts-node-dev](https://www.npmjs.com/package/ts-node-dev) for development (restarts app when code changes)
 - [typescript-eslint](https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/README.md) with [type-aware rules](https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/TYPED_LINTING.md)
-- Github: Dependabot dependency updates
+- Github: Dependabot dependency updates, Github Actions CI
 
 ## Customizing for your project
 
