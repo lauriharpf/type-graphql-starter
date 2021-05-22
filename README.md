@@ -1,3 +1,5 @@
+![Build](https://github.com/lauriharpf/type-graphql-starter/actions/workflows/node.js.yml/badge.svg)
+
 # TypeGraphQL starter template
 
 Starter template for bootstrapping a [TypeGraphQL](https://typegraphql.com/) + [Apollo Server](https://www.apollographql.com/docs/apollo-server/) GraphQL API. The purpose is to help getting started quickly with TypeGraphQL development by providing a runnable API with examples you can build on. Not endorsed by or affiliated with the TypeGraphQL team. Be sure to also check out the [TypeGraphQL documentation](https://typegraphql.com/docs/introduction.html) and [examples](https://typegraphql.com/docs/examples.html).
