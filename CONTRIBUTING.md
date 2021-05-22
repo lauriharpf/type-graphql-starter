@@ -16,8 +16,8 @@ If you find a bug, [open an issue with the Bug report template](https://github.c
 
 If you'd like to suggest a feature or an improvement, [open an issue with the Feature request template](https://github.com/lauriharpf/type-graphql-starter/issues/new?assignees=&labels=&template=feature_request.md&title=).
 
-* **Major Features**: First open an issue and outline your proposal so that it can be discussed. This will also allow us to better coordinate our efforts, prevent duplication of work, and help get the change accepted into the project.
-* **Small Features**: Can be crafted and directly [submitted as a Pull Request](#submit-pr).
+- **Major Features**: First open an issue and outline your proposal so that it can be discussed. This will also allow us to better coordinate our efforts, prevent duplication of work, and help get the change accepted into the project.
+- **Small Features**: Can be crafted and directly [submitted as a Pull Request](#submit-pr).
 
 ## <a name="submit-pr"></a>Pull Requests?
 
