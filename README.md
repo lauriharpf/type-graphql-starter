@@ -35,7 +35,7 @@ query Posts {
 - [Apollo Server](https://github.com/apollographql/apollo-server)
 - [Bootstrapping code to start the server](https://typegraphql.com/docs/bootstrap.html)
 - Example resolvers and [Apollo REST Data Source](https://www.npmjs.com/package/apollo-datasource-rest)s (posts, users)
-- Test infrastructure ([ts-jest](https://github.com/kulshekhar/ts-jest), [apollo-server-testing](https://www.apollographql.com/docs/apollo-server/testing/testing/) and [nock](https://www.npmjs.com/package/nock)) and example tests
+- Test infrastructure ([ts-jest](https://github.com/kulshekhar/ts-jest) and [nock](https://www.npmjs.com/package/nock)) with example tests
 - [ts-node-dev](https://www.npmjs.com/package/ts-node-dev) for development (restarts app when code changes)
 - [typescript-eslint](https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/README.md) with [type-aware rules](https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/TYPED_LINTING.md)
 - Github: Dependabot dependency updates
