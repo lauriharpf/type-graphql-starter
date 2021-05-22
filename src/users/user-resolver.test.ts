@@ -1,6 +1,6 @@
 import { gql } from "apollo-server";
-import { createTestClient } from "apollo-server-testing";
 import nock from "nock";
+import { print } from "graphql";
 import { createServer } from "../create-server";
 
 describe("UserResolver", () => {
@@ -27,9 +27,9 @@ describe("UserResolver", () => {
       ]);
 
     const server = await createServer();
-    // eslint-disable-next-line jest/unbound-method
-    const { query } = createTestClient(server);
-    const response = await query({ query: usersQuery });
+    const response = await server.executeOperation({
+      query: print(usersQuery),
+    });
 
     expect(response.errors).toBeUndefined();
     expect(response.data).toEqual({
@@ -55,10 +55,8 @@ describe("UserResolver", () => {
     });
 
     const server = await createServer();
-    // eslint-disable-next-line jest/unbound-method
-    const { query } = createTestClient(server);
-    const response = await query({
-      query: userQuery,
+    const response = await server.executeOperation({
+      query: print(userQuery),
       variables: { userId: "1" },
     });
 
@@ -100,10 +98,8 @@ describe("UserResolver", () => {
       ]);
 
     const server = await createServer();
-    // eslint-disable-next-line jest/unbound-method
-    const { query } = createTestClient(server);
-    const response = await query({
-      query: userQueryWithPosts,
+    const response = await server.executeOperation({
+      query: print(userQueryWithPosts),
       variables: { userId: "1" },
     });
 

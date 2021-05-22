@@ -1,7 +1,7 @@
 import nock from "nock";
 import { gql } from "apollo-server";
 import { createServer } from "../create-server";
-import { createTestClient } from "apollo-server-testing";
+import { print } from "graphql";
 
 describe("PostResolver", () => {
   it("returns all posts", async () => {
@@ -27,9 +27,9 @@ describe("PostResolver", () => {
       ]);
 
     const server = await createServer();
-    // eslint-disable-next-line jest/unbound-method
-    const { query } = createTestClient(server);
-    const response = await query({ query: postsQuery });
+    const response = await server.executeOperation({
+      query: print(postsQuery),
+    });
 
     expect(response.errors).toBeUndefined();
     expect(response.data).toEqual({
